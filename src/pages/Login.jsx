@@ -1,6 +1,6 @@
 import styles from "./Login.module.css";
-
-export default function Login() {
+import { useState } from "react"
+const Login = () => {
   // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("jack@example.com");
   const [password, setPassword] = useState("qwerty");
@@ -35,3 +35,5 @@ export default function Login() {
     </main>
   );
 }
+
+export default Login
